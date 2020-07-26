@@ -31,3 +31,6 @@ coverage/
 test_data/
 test-results/
 yarn-error.log
+
+# goormIDE
+goorm.manifest

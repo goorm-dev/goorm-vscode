@@ -1,0 +1,21 @@
+{
+	"extends": "./tsconfig.base.json",
+	"compilerOptions": {
+		"module": "es6",
+		"removeComments": false,
+		"preserveConstEnums": true,
+		"sourceMap": true,
+		"outDir": "../out",
+		"target": "es2017",
+		"types": [
+			"keytar",
+			"mocha",
+			"semver",
+			"sinon",
+			"winreg"
+		]
+	},
+	"include": [
+		"./goorm"
+	],
+}
