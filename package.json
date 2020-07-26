@@ -6,7 +6,7 @@
 		"name": "Microsoft Corporation"
 	},
 	"license": "MIT",
-	"main": "./out/main",
+	"main": "./out/goorm/index.js",
 	"private": true,
 	"scripts": {
 		"test": "mocha",
@@ -44,7 +44,7 @@
 		"compile-web": "gulp compile-web --max_old_space_size=4095",
 		"watch-web": "gulp watch-web --max_old_space_size=4095",
 		"eslint": "eslint -c .eslintrc.json --rulesdir ./build/lib/eslint --ext .ts --ext .js ./src/vs ./extensions",
-		"goorm:build": "tcs -p src/tsconfig.goorm.json"
+		"goorm:build": "rm -rf ./out && tsc -p src/tsconfig.goorm.json"
 	},
 	"dependencies": {
 		"applicationinsights": "1.0.8",
